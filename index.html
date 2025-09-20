@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Renaissance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&family=Poppins:wght@400;600;700&display=swap');
+    body { font-family: 'Poppins', sans-serif; }
+    .font-merriweather { font-family: 'Merriweather', serif; }
+  </style>
+</head>
+<body class="bg-[#f8f3ed] text-[#3c273a] flex items-center justify-center min-h-screen p-2">
+
+  <div class="w-full max-w-7xl mx-auto p-4 sm:p-6 md:p-8 bg-[#f3ece7] rounded-lg">
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-x-10 gap-y-8">
+
+    <!-- Navbar -->
+<header class="md:col-span-12 border-b border-gray-300 pb-4">
+  <div class="grid grid-cols-[auto_1fr_auto] items-center">
+    
+    <!-- Logo -->
+    <div class="justify-self-start bg-white w-[39px]">
+      <img src="assests/star.png" alt="star" class="w-10 h-10">
+    </div>
+
+   
+    <nav class="hidden md:grid grid-flow-col auto-cols-max justify-end mr-10 lg:mr-20 gap-6 lg:gap-10">
+      <a href="#" class="text-sm font-semibold hover:text-[#b2927a]">Home</a>
+      <a href="#" class="text-sm font-semibold hover:text-[#b2927a]">Marketplace</a>
+      <a href="#" class="text-sm font-semibold hover:text-[#b2927a]">Artist</a>
+      <a href="#" class="text-sm font-semibold hover:text-[#b2927a]">Community</a>
+    </nav>
+
+    <!-- Desktop Auth Buttons -->
+    <div class="hidden md:grid grid-flow-col auto-cols-max justify-end gap-3 sm:gap-5">
+      <button class="bg-[#1e2b38] text-white text-xs sm:text-sm font-bold py-2 px-4 sm:py-2.5 sm:px-6 rounded-full">
+        Sign up
+      </button>
+      <a href="#" class="text-xs sm:text-sm font-bold pl-3 sm:pl-5 py-2.5 border-l border-gray-800">
+        Login
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <div class="md:hidden justify-self-end">
+      <button id="menuBtn" class="p-2">
+        <!-- Hamburger Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#1e2b38]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobileMenu" class="hidden mt-3 space-y-3 text-center">
+    <a href="#" class="block text-sm font-semibold hover:text-[#b2927a]">Home</a>
+    <a href="#" class="block text-sm font-semibold hover:text-[#b2927a]">Marketplace</a>
+    <a href="#" class="block text-sm font-semibold hover:text-[#b2927a]">Artist</a>
+    <a href="#" class="block text-sm font-semibold hover:text-[#b2927a]">Community</a>
+    <button class="w-[100px] bg-[#1e2b38] text-white text-sm font-bold py-2 px-4 rounded-full">Sign up</button>
+    <a href="#" class="block text-sm font-bold py-2">Login</a>
+  </div>
+</header>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById("menuBtn").addEventListener("click", function () {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  });
+</script>
+
+      <!-- Main Content: Left Side -->
+      <main class="md:col-span-6 lg:col-span-5 relative -mt-4 md:-mt-6 text-center md:text-left">
+        <h1 class="text-3xl sm:text-4xl lg:text-6xl font-merriweather font-bold text-[#6e4b57] leading-tight mt-6 sm:mt-8">
+          <span class="text-[#d1aa85] font-merriweather italic font-normal text-2xl sm:text-3xl lg:text-5xl">Unlock</span><br>
+          The Digital Renaissance
+        </h1>
+        <p class="mt-4 sm:mt-6 text-sm sm:text-base text-[#3c273a] max-w-md mx-auto md:mx-0">
+          Join the revolution, embrace the digital revolution, and become a part of the ever-evolving NFT ecosystem.
+        </p>
+
+        <!-- Product Cards -->
+        <div class="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-lg sm:max-w-2xl md:max-w-4xl mx-auto md:mx-0">
+          
+          <!-- Bear Card -->
+          <div class="bg-[#efe8de] rounded-t-full rounded-b-2xl overflow-hidden shadow-md text-center">
+            <div class="p-4 pt-8">
+              <img src="assests/beer.png" alt="Bear" class="h-16 sm:h-20 lg:h-24 mx-auto -mt-4">
+              <p class="font-bold text-sm sm:text-md text-[#1f1d1a] mt-3">Bear</p>
+              <p class="text-xs text-[#273440]">by Andrew Garf</p>
+            </div>
+            <div class="bg-white rounded-t-[40px] py-2 sm:py-3">
+              <p class="font-bold text-base sm:text-lg text-[#969081]">40$</p>
+            </div>
+          </div>
+
+          <!-- Lion Card -->
+          <div class="bg-[#efe8de] rounded-t-full rounded-b-2xl overflow-hidden shadow-md text-center">
+            <div class="p-4 pt-8">
+              <img src="assests/Lion.png" alt="Lion" class="h-16 sm:h-20 lg:h-24 mx-auto -mt-4">
+              <p class="font-bold text-sm sm:text-md text-[#1f1d1a] mt-3">Lion</p>
+              <p class="text-xs text-[#273440]">by Jen Stark</p>
+            </div>
+            <div class="bg-white rounded-t-[40px] py-2 sm:py-3">
+              <p class="font-bold text-base sm:text-lg text-[#969081]">80$</p>
+            </div>
+          </div>
+
+          <!-- Cats Card -->
+          <div class="bg-[#efe8de] rounded-t-full rounded-b-2xl overflow-hidden shadow-md text-center">
+            <div class="p-4 pt-8">
+              <img src="assests/Cat.png" alt="Cats" class="h-16 sm:h-20 lg:h-24 mx-auto -mt-4">
+              <p class="font-bold text-sm sm:text-md text-[#1f1d1a] mt-3">Cats</p>
+              <p class="text-xs text-[#273440]">by Casey Reas</p>
+            </div>
+            <div class="bg-white rounded-t-[40px] py-2 sm:py-3">
+              <p class="font-bold text-base sm:text-lg text-[#969081]">120$</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Start Button (absolute on desktop, normal flow on mobile) -->
+        <div class="mt-6 md:mt-0 md:absolute md:z-10 md:ml-20 ml-40" style="left:95%; top:50%; transform:translateX(-50%);">
+          <button class="bg-[#273440] text-[#f6d68a] font-bold text-base sm:text-lg py-3 sm:py-4 px-8 sm:px-10 rounded-full shadow-lg border-2 border-[#f6d68a] w-full sm:w-auto">
+            Start
+          </button>
+        </div>
+
+      </main>
+      
+      <!-- Main Content: Right Side -->
+      <aside class="md:col-span-6 lg:col-span-7 relative ml-0 md:ml-20 -mt-6 md:-mt-16">
+        <div class="relative">
+          <img src="assests/hand.png" alt="Hand" class="w-full h-[350px] sm:h-[450px] md:h-[600px] object-contain">
+          <img src="assests/stone.png" alt="Stone" class="absolute w-1/2 sm:w-1/3 top-[15%] sm:top-[9%] right-[40%] sm:right-[60%]">
+        </div>
+
+        <!-- Barcode -->
+        <div class="absolute bottom-0 w-full max-w-md p-4 mx-auto md:ml-10  " >
+          <div class="bg-white p-3 rounded-lg shadow-md flex flex-col items-center ">
+            <img src="assests/Barcode.png" alt="Barcode" class="w-full h-[50px] sm:h-[70px] ">
+            <p class="mt-2 text-xs sm:text-sm tracking-widest font-mono text-gray-700">
+              0712345 3256 67893255 678900
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Footer -->
+      <footer class="md:col-span-12 border-t border-[#C1BAB8] flex flex-wrap justify-center md:justify-between items-center text-xs sm:text-sm font-bold text-[#1E2B38] gap-3 sm:gap-4">
+        <img src="assests/star.png" alt="star" class="w-6 sm:w-8 lg:w-10 opacity-50 hidden sm:block">
+        <a href="#" class="hover:text-[#273440]">Join the Revolution</a>
+        <img src="assests/star.png" alt="star" class="w-6 sm:w-8 lg:w-10 opacity-50 hidden sm:block">
+        <a href="#" class="hover:text-[#273440]">Future is Here</a>
+        <img src="assests/star.png" alt="star" class="w-6 sm:w-8 lg:w-10 opacity-50 hidden sm:block">
+        <a href="#" class="hover:text-[#273440]">NFT World</a>
+        <img src="assests/star.png" alt="star" class="w-6 sm:w-8 lg:w-10 opacity-50 hidden sm:block">
+        <a href="#" class="hover:text-[#273440]">Rule the Game</a>
+        <img src="assests/star.png" alt="star" class="w-6 sm:w-8 lg:w-10 opacity-50 hidden sm:block">
+        <a href="#" class="hover:text-[#273440]">We Are NFT</a>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>
